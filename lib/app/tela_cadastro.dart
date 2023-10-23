@@ -56,15 +56,18 @@ class _CadastroPageState extends State<CadastroPage> {
               obscureText: true,
             ),
             const SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: _cadastrar,
-              child: const Text('Cadastrar'),
-            ),
+              MaterialButton(
+                onPressed: _cadastrar, // Direciona para a tela Home
+                color: Colors.teal,
+                textColor: Colors.white,
+                splashColor: Colors.redAccent,
+                child: const Text("Cadastrar"),
+              ),
             const SizedBox(height: 16.0),
             if (_dadosCadastrados != null)
               Text(
                 'Dados Cadastrados:\n$_dadosCadastrados',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
           ],
         ),

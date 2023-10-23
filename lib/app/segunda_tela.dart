@@ -25,13 +25,6 @@ class _SegundaTelaState extends State<SegundaTela> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
-            Image.asset('assets/images/CanetaAzul.jfif'),
           ],
         ),
       ),
