@@ -59,12 +59,11 @@ class _LoginPageState extends State<LoginPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 124, 135, 199),
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            color: Colors.grey,
+            color: const Color(0xFF28527a),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -76,26 +75,21 @@ class _LoginPageState extends State<LoginPage>
                 child: Theme(
                   data: ThemeData(
                       brightness: Brightness.dark,
-                      primarySwatch: Colors.teal,
+                      primarySwatch: Colors.amber,
                       inputDecorationTheme: const InputDecorationTheme(
-                        labelStyle: TextStyle(color: Colors.white),
+                        labelStyle: TextStyle(color: Colors.black),
                       )),
                   child: Container(
                     padding: const EdgeInsets.all(40.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        TextFormField(
-                          decoration: const InputDecoration(
-                            labelText: "Enter Email",
-                          ),
-                          keyboardType: TextInputType.emailAddress,
+                        TextField(
+                          decoration: const InputDecoration(labelText: 'Email'),
+                          obscureText: true,
                         ),
-                        TextFormField(
-                          decoration: const InputDecoration(
-                            labelText: "Enter Password",
-                          ),
-                          keyboardType: TextInputType.text,
+                        TextField(
+                          decoration: const InputDecoration(labelText: 'Senha'),
                           obscureText: true,
                         ),
                         const Padding(
@@ -103,18 +97,20 @@ class _LoginPageState extends State<LoginPage>
                         ),
                         MaterialButton(
                           onPressed: _navigateToHome, // Direciona para a tela Home
-                          color: Colors.teal,
-                          textColor: Colors.white,
-                          splashColor: Colors.redAccent,
-                          child: const Text("Login"),
+                          color: const Color(0xFF8ac4d0),
+                          textColor: Colors.black,
+                          splashColor: const Color(0xFFf4d160),
+                          child: const Text("Entrar"),
+                          minWidth: 300,
                         ),
                         const SizedBox(height: 10.0),
                         MaterialButton(
                           onPressed: _navigateToCadastro,
-                          color: Colors.teal,
-                          textColor: Colors.white,
-                          splashColor: Colors.redAccent,
+                          color: const Color(0xFF8ac4d0),
+                          textColor: Colors.black,
+                          splashColor: const Color(0xFFf4d160),
                           child: const Text("Cadastrar"),
+                          minWidth: 300,
                         )
                       ],
                     ),

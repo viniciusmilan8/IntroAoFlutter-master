@@ -14,11 +14,12 @@ class _SegundaTelaState extends State<SegundaTela> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: 
-      Menu(context),
+      drawer: Menu(context),
+      backgroundColor:const Color(0xFF28527a),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Segunda Tela"),
+        backgroundColor:Colors.blueGrey,
+        title: Text("Imagem"),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(

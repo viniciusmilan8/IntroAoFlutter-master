@@ -27,8 +27,10 @@ class _CadastroPageState extends State<CadastroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF28527a),
       appBar: AppBar(
         title: const Text('Cadastro'),
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back), // Ícone de volta padrão
           onPressed: () {
@@ -58,9 +60,9 @@ class _CadastroPageState extends State<CadastroPage> {
             const SizedBox(height: 16.0),
               MaterialButton(
                 onPressed: _cadastrar, // Direciona para a tela Home
-                color: Colors.teal,
-                textColor: Colors.white,
-                splashColor: Colors.redAccent,
+                color: const Color(0xFF8ac4d0),
+                textColor: Colors.black,
+                splashColor: const Color(0xFFf4d160),
                 child: const Text("Cadastrar"),
               ),
             const SizedBox(height: 16.0),

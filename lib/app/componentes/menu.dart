@@ -9,24 +9,39 @@ Widget Menu(BuildContext context){
       children: [
         const DrawerHeader(
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color:Colors.blueGrey,
           ),
-          child: Text('Drawer Header'),
+          child: Text(
+            'Menu',
+            style: const TextStyle(
+              fontSize: 30,
+              color: Colors.white,
+            ),
+            ),
         ),
 
         ListTile(
-          title: const Text('Calculadora'),
+          title: Text(
+            'Calculadora',
+            style: const TextStyle(
+              fontSize: 20,
+            ),
+          ),
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => 
-              ActivityPage()),
+              MaterialPageRoute(builder: (context) => ActivityPage()),
             );
           },
         ),
 
         ListTile(
-          title: const Text('Sobre'),
+          title: const Text(
+            'Sobre',
+              style: const TextStyle(
+                fontSize: 20,
+              ),
+            ),
           onTap: () {
             Navigator.push(
               context,
