@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:novoprojeto/app/componentes/menu.dart';
-import 'home.dart';
 
 class SegundaTela extends StatefulWidget {
   const SegundaTela({super.key});
@@ -29,7 +27,6 @@ class _SegundaTelaState extends State<SegundaTela> {
           ],
         ),
       ),
-       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:novoprojeto/app/tela_login.dart';
+import '../tela_calculadora.dart';
+import '../tela_imagem.dart';
 
-import '../home.dart';
-import '../segunda_tela.dart';
+void _emptyFunction(BuildContext context) {
+  // Função vazia que não faz nada
+}
 
-Widget Menu(BuildContext context){
+Widget Menu(BuildContext context) {
   return Drawer(
-    child:  ListView(
+    child: ListView(
       children: [
         const DrawerHeader(
           decoration: BoxDecoration(
-            color:Colors.blueGrey,
+            color: Colors.blueGrey,
           ),
           child: Text(
             'Menu',
@@ -17,9 +21,8 @@ Widget Menu(BuildContext context){
               fontSize: 30,
               color: Colors.white,
             ),
-            ),
+          ),
         ),
-
         ListTile(
           title: Text(
             'Calculadora',
@@ -34,20 +37,29 @@ Widget Menu(BuildContext context){
             );
           },
         ),
-
         ListTile(
           title: const Text(
             'Sobre',
-              style: const TextStyle(
-                fontSize: 20,
-              ),
+            style: const TextStyle(
+              fontSize: 20,
             ),
+          ),
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>
-              const SegundaTela()),
+              MaterialPageRoute(builder: (context) => const SegundaTela()),
             );
+          },
+        ),
+        ListTile(
+          title: Text(
+            'Sair',
+            style: const TextStyle(
+              fontSize: 20,
+            ),
+          ),
+          onTap: () {
+            Navigator.pushReplacementNamed(context, '/');
           },
         ),
       ],
