@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:novoprojeto/app/tela_login.dart';
 import '../tela_calculadora.dart';
 import '../tela_imagem.dart';
-
-void _emptyFunction(BuildContext context) {
-  // Função vazia que não faz nada
-}
 
 Widget Menu(BuildContext context) {
   return Drawer(
